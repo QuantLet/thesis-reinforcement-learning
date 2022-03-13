@@ -5,6 +5,8 @@ import os
 import time
 from argparse import ArgumentParser
 from datetime import datetime
+import tflearn
+import cvxopt
 
 from pgportfolio.tools.configprocess import preprocess_config
 from pgportfolio.tools.configprocess import load_config
@@ -44,7 +46,7 @@ def build_parser():
 
 def main():
     parser = build_parser()
-    options = parser.parse_args()
+    options = args = parser.parse_args(args=[])
     if not os.path.exists("./" + "train_package"):
         os.makedirs("./" + "train_package")
     if not os.path.exists("./" + "database"):
