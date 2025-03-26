@@ -13,7 +13,11 @@ new_x = df.iloc[:, 0]
 fig   = plt.figure()
 ax    = fig.add_subplot(111, label = "1")
 ax.xaxis_date()
-ax.set_xlim(["05/01/2017","07/03/2017"])
+
+datemin = datetime(2017, 5, 1)
+datemax = datetime(2017, 7, 1)
+ax.set_xlim(datemin, datemax)
+
 ax.xaxis.set_major_formatter(DateFormatter('%d.%m'))
 plt.scatter(new_x.tolist(), df.iloc[:, 1], c = "blue", s = 2, marker = "x")
 plt.title("Leverage values for " + r"$D_{target} = 0.1$")
