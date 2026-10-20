@@ -9,11 +9,9 @@ Name of Quantlet: RL_MainComputation
 
 Published in: A leveraged investment strategy using Deep Reinforcement Learning
 
-Description: Trains the neural network. The input values are configured in net_config.json.
+Description: Trains the neural network. The input values are configured in net_config.json. Additionaly, the target drawdown 'D_target' can be set in nnagent.py in the function loss_function8. To run the code, open the command line and enter first 'python main.py --mode=generate --repeat=1' and then 'python main.py --mode=train --processes=1'. The output is then located in the 'train_package'.
 
-The basis for the code was provided by Z. Jiang and can be found here: 
-
-'https: //github.com/ZhengyaoJiang/PGPortfolio/blob/master
+The basis for the code was provided by Z. Jiang and can be found here: https://github.com/ZhengyaoJiang/PGPortfolio/blob/master Note that the command 'python main.py --mode=download_data' used to download data from Poloniex, but may not work anymore. A database is provided in the 'database' folder, to allow to replicate the experiments in the Thesis and do other experiments in the time range '01.07.2015 - 31.10.2018'. The database is in the rar format and needs to be extracted before running the code."
 
 Keywords: reinforcement learning, neural network, machine learning, portfolio management, cryptocurrency
 
