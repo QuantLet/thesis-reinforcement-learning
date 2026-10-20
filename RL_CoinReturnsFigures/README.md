@@ -20,7 +20,7 @@ See also: RL_MainComputation, RL_CoinFigures
 Submitted: 23.04.2019
 
 Input: 
-- df: "Coin prices, contained in the CSV-files of the 'Database' folder
+- df: "Coin prices, contained in the CSV-files of the 'Database' folder"
 
 ```
 <div align="center">
